@@ -1,0 +1,73 @@
+:root {
+  --bgSite: #f6f6f6;
+  --bgCard: #ebe9ea;
+
+  --white: #fff;
+
+  --title: #181818;
+  --text: #474747;
+
+  --text-primary: Montserrat Medium;
+  --text-bold: Montserrat Bold;
+  --text-semi-bold: Montserrat SemiBold;
+}
+
+@font-face {
+  font-family: Montserrat Medium;
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: Montserrat Bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: Montserrat SemiBold;
+  src: url(../fonts/SemiBold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--text-primary);
+}
+
+body {
+  font-size: 1rem;
+}
+
+.container {
+  display: flex;
+  max-width: 1340px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+header .discount {
+  display: flex;
+  justify-content: center;
+  background-color: var(--title);
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+}
+
+header .logo h1 {
+  padding: 21px 0;
+  text-decoration: none;
+  color: var(--title);
+  font-size: 1.5rem;
+}
+
+header .discount a {
+  padding: 21px 0;
+  text-decoration: none;
+  color: var(--white);
+}
